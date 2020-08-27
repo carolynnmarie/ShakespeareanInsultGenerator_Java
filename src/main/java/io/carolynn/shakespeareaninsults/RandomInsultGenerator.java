@@ -5,10 +5,11 @@ import java.util.Scanner;
 
 public class RandomInsultGenerator {
 
-    String [] partOne;
-    String [] partTwo;
-    String [] partThree;
-    String [] classics;
+    private String [] partOne;
+    private String [] partTwo;
+    private String [] partThree;
+    private String [] classics;
+
 
     public RandomInsultGenerator(){
 
@@ -65,7 +66,7 @@ public class RandomInsultGenerator {
         Scanner scanner = new Scanner(System.in);
         String answer = "";
         String quote = "";
-        System.out.println("Would you like a classic Shakespearean insult or would you like to create your own random Shakespearean insult?  " +
+        System.out.println("Would you like a classic Shakespearean insult or would you like to create your own random Shakespearean insult?\n" +
                 "Type classic for a classic insult or type random for a random insult");
         answer = scanner.nextLine().toLowerCase();
         if (answer.equals("classic")) {
